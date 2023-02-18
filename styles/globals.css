@@ -3,13 +3,24 @@
 @tailwind utilities;
 
 @layer utilities {
-  .animation-delay-8000 {
-    animation-delay: 8s;
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 }
 
 @layer utilities {
   .animation-delay-12000 {
     animation-delay: 12s;
+  }
+}
+
+@font-face {
+  font-family: "Avestrava";
+  src: url("/fonts/avestrava.otf") format("otf");
+}
+
+@layer base {
+  body {
+    font-family: "Avestrava";
   }
 }

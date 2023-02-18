@@ -12,6 +12,11 @@ export default function Home() {
       </Head>
       <main>
         <div className="bg-white">
+          <div className="fixed  top-0 min-h-screen w-full backdrop-blur-3xl mix-blend-normal text-9xl flex items-center justify-center">
+            <div className="tracking-wide animate-breathe xl:text-[500px] md:text-[300px] text-[200px] blur-xs opacity-10">
+              breathe
+            </div>
+          </div>
           {/* initial test */}
           {/* <div className="bg-gradient-to-b from-amber-50 to-red-400 h-1/2 flex items-center justify-center mix-blend-difference"></div> */}
           <div className="relative w-full min-w-screen">
@@ -19,14 +24,14 @@ export default function Home() {
             <div className="fixed top-20 -right-4 w-96 h-96 bg-[#e099ff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-glob"></div>
             <div className="fixed top-40 left-40 w-40 h-40 bg-[#ffa299] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-fall"></div>
             <div className="fixed -top-80 -left-4 w-96 h-96 bg-[#0f692d] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-blob"></div>
-            <div className="fixed -top-96 -right-4 w-96 h-96 bg-[#eeff99] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-glob"></div>
+            <div className="fixed -top-96 -right-4 w-96 h-96 bg-[#eeff99] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-glob animation-delay-4000"></div>
             <div className="fixed -top-96 left-40 w-20 h-20 bg-[#99ffe9] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-plob"></div>
             <div className="fixed -top-96 -right-30 w-96 h-96 bg-[#ffffff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-fall"></div>
             <div className="fixed -top-96 right-40 w-96 h-96 bg-[#ffffff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-ball"></div>
             <div className="fixed -top-80 right-0 w-96 h-96 bg-[#0f692d] rounded-full mix-blend-difference filter blur-xl opacity-100 animate-fall"></div>
           </div>
           {/* stripes */}
-          <div className="">
+          {/* <div className="">
             <div className="bg-red-300 h-10 mix-blend-difference"></div>
             <div className="bg-white h-2 mix-blend-difference"></div>
             <div className="bg-red-400 h-10 mix-blend-difference"></div>
@@ -54,7 +59,7 @@ export default function Home() {
             <div className="bg-lime-400 h-10 mix-blend-difference"></div>
             <div className="bg-white h-2 mix-blend-difference"></div>
             <div className="bg-lime-300 h-10 mix-blend-difference"></div>
-          </div>
+          </div> */}
           {/* stripe to gradient */}
           <div className="h-80 bg-gradient-to-b from-lime-300 to-[#FBF8CC] mix-blend-difference"></div>
 

@@ -10,14 +10,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      blur: {
+        xs: "2px",
+      },
       animation: {
         blob: "blob 20s infinite",
         glob: "glob 40s infinite",
         plob: "plob 40s infinite",
         fall: "fall 50s infinite",
         ball: "ball 50s infinite",
+        breathe: "breathe 10s infinite",
       },
       keyframes: {
+        breathe: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+          "100%": { transform: "scale(1)" },
+        },
         blob: {
           "0%": { transform: "translate(0% 0%) scale(.5)" },
           "50%": { transform: "translate(100%, 50%) scale(2.5)" },
