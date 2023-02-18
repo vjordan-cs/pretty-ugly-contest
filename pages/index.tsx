@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* initial test */}
+        {/* initial test1 */}
         {/* <div className="bg-gradient-to-b from-amber-50 to-red-400 h-1/2 flex items-center justify-center mix-blend-difference"></div> */}
         <div className="relative w-full min-w-screen">
           <div className="fixed top-20 -left-4 w-96 h-96 bg-[#ff9dc5] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-blob"></div>
