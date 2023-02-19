@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
+import PopMenu from "../components/PopMenu.js";
 
 export default function Home() {
   return (
@@ -13,9 +15,9 @@ export default function Home() {
       <main>
         <div className="bg-white">
           <div className="fixed  top-0 min-h-screen w-full backdrop-blur-3xl mix-blend-normal text-9xl flex items-center justify-center">
-            <div className="tracking-wide animate-breathe xl:text-[500px] md:text-[300px] text-[200px] blur-xs opacity-10">
+            <h1 className="tracking-wide animate-breathe xl:text-[700px] md:text-[500px] text-[200px] blur-xs opacity-5">
               breathe
-            </div>
+            </h1>
           </div>
           {/* initial test */}
           {/* <div className="bg-gradient-to-b from-amber-50 to-red-400 h-1/2 flex items-center justify-center mix-blend-difference"></div> */}
@@ -23,10 +25,10 @@ export default function Home() {
             <div className="fixed top-20 -left-4 w-96 h-96 bg-[#ff9dc5] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-blob"></div>
             <div className="fixed top-20 -right-4 w-96 h-96 bg-[#e099ff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-glob"></div>
             <div className="fixed top-40 left-40 w-40 h-40 bg-[#ffa299] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-fall"></div>
-            <div className="fixed -top-80 -left-4 w-96 h-96 bg-[#0f692d] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-blob"></div>
+            <div className="fixed -top-80 -left-4 w-96 h-96 bg-[#0f692d] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-blob "></div>
             <div className="fixed -top-96 -right-4 w-96 h-96 bg-[#eeff99] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-glob animation-delay-4000"></div>
             <div className="fixed -top-96 left-40 w-20 h-20 bg-[#99ffe9] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-plob"></div>
-            <div className="fixed -top-96 -right-30 w-96 h-96 bg-[#ffffff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-fall"></div>
+            <div className="fixed -top-96 -right-30 w-96 h-96 bg-[#ffffff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-fall animation-delay-4000"></div>
             <div className="fixed -top-96 right-40 w-96 h-96 bg-[#ffffff] rounded-full mix-blend-difference filter blur-xl opacity-60 animate-ball"></div>
             <div className="fixed -top-80 right-0 w-96 h-96 bg-[#0f692d] rounded-full mix-blend-difference filter blur-xl opacity-100 animate-fall"></div>
           </div>
@@ -71,6 +73,12 @@ export default function Home() {
             <div className="min-h-screen bg-gradient-to-b from-[#691312] via-[#5D0933] to-[#291938] mix-blend-difference"></div>
             <div className="min-h-screen bg-gradient-to-b from-[#291938] via-[#042D3A] to-[#12403C] mix-blend-difference"></div>
             <div className="min-h-screen bg-gradient-to-b from-[#12403C] via-[#475200] to-[#664D00] mix-blend-difference"></div>
+          </div>
+          {/* Begin action bar */}
+          <div className="">
+            <div className="absolute left-10 top-10">
+              <PopMenu />
+            </div>
           </div>
         </div>
       </main>

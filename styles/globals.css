@@ -18,9 +18,25 @@
   font-family: "Avestrava";
   src: url("/fonts/avestrava.otf") format("otf");
 }
+@font-face {
+  font-family: "Oscilus";
+  src: url("/fonts/Oscilus-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FiraCode";
+  src: url("/fonts/FiraCode-Medium.woff2") format("woff2");
+}
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oscilus";
+  }
   body {
-    font-family: "Avestrava";
+    font-family: "FiraCode-Medium";
   }
 }
